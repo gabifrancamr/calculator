@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form  class="calculator" name="calc">
+            <input type="text" class="value" name="txt">
+            <span class="num clear">c</span> 
+            <span class="num" data-value = "7">7</span>
+            <span class="num" data-value = "8">8</span>
+            <span class="num" data-value = "9">9</span>
+            <span class="num" data-value = ' * '>*</span>
+            <span class="num" data-value = "4">4</span>
+            <span class="num" data-value = "5">5</span>
+            <span class="num" data-value = "6">6</span>
+            <span class="num" data-value = ' / '>/</span>
+            <span class="num" data-value = "1">1</span>
+            <span class="num" data-value = "2">2</span>
+            <span class="num" data-value = "3">3</span>
+            <span class="num plus" data-value = ' + '>+</span>
+            <span class="num" data-value = "0">0</span>
+            <span class="num" data-value = "00">00</span>
+            <span class="num" data-value = '.'>.</span>
+            <span class="num" data-value=" - " >-</span>
+            <span class="equal ">=</span>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="text/javascript" src="raw.githubusercontent.com_micku7zu_vanilla-tilt.js_master_dist_vanilla-tilt.js"></script>
+    <script type="text/javascript">
+	    VanillaTilt.init(document.querySelector(".container"), {
+	    	max: 25,
+	    	speed: 400,
+            glare: true, 
+            "max-glare": 0.2, 
+	    });
+	
+	    //It also supports NodeList
+	   
+    </script>
+</body>
+</html>
